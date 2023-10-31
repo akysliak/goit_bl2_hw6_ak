@@ -84,16 +84,5 @@ if __name__ == "__main__":
     execute_queries(sqls, db_name)
     add_students_and_grades(db_name)
 
-'''
-try:
-    # Збереження змін
-    conn.commit()
-except DatabaseError as e:
-    logging.error(e)
-    conn.rollback()
-finally:
-    # Закриття підключення
-    cur.close()
-    conn.close()
-'''
+
 
